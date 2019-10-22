@@ -60,8 +60,8 @@ public class Machine {
 
     public void buyCoffee(String s){
         if (s.equals("1")) calculateEspresso();
-        if (s.equals("2")) calculateLatte();
-        if (s.equals("3")) calculateCappuccino();
+        else if (s.equals("2")) calculateLatte();
+        else if (s.equals("3")) calculateCappuccino();
         else System.err.println("Enter correct option");
     }
 
